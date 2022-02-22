@@ -10,7 +10,7 @@ int main() {
     printf("          P  /_\\  P                              \n");
     printf("         /_\\_|_|_/_\\                            \n");
     printf("     n_n | ||. .|| | n_n         Bem vindo ao     \n");
-    printf("     |_|_|nnnn nnnn|_|_|     Jogo de Adivinhação! \n");
+    printf("     |_|_|nnnn nnnn|_|_|     Jogo de AdivinhaÃ§Ã£o! \n");
     printf("    |\" \"  |  |_|  |\"  \" |                     \n");
     printf("    |_____| ' _ ' |_____|                         \n");
     printf("          \\__|_|__/                              \n");
@@ -30,8 +30,8 @@ int main() {
     int numerosecreto = rand() % 100;
 
     // escolhendo o nivel de dificuldade
-    printf("Qual o nível de dificuldade?\n");
-    printf("(1) Fácil (2) Médio (3) Difícil\n\n");
+    printf("Qual o nÃ­vel de dificuldade?\n");
+    printf("(1) FÃ¡cil (2) MÃ©dio (3) DifÃ­cil\n\n");
     printf("Escolha: ");
 
     scanf("%d", &nivel);
@@ -53,12 +53,12 @@ int main() {
 
         printf("-> Tentativa %d de %d\n", i, totaldetentativas);
 
-        printf("Chute um número: ");
+        printf("Chute um nÃºmero: ");
         scanf("%d", &chute);
 
         // tratando chute de numero negativo
         if(chute < 0) {
-            printf("Você não pode chutar números negativos\n");
+            printf("VocÃª nÃ£o pode chutar nÃºmeros negativos\n");
             i--;
             continue;
         }
@@ -69,9 +69,9 @@ int main() {
         if(acertou) {
             break;
         } else if(chute > numerosecreto) {
-            printf("\nSeu chute foi maior do que o número secreto!\n\n");
+            printf("\nSeu chute foi maior do que o nÃºmero secreto!\n\n");
         } else {
-            printf("\nSeu chute foi menor do que o número secreto!\n\n");
+            printf("\nSeu chute foi menor do que o nÃºmero secreto!\n\n");
         }
 
         // calcula a quantidade de pontos
@@ -97,8 +97,8 @@ int main() {
         printf("      OOOOOO   OOOOOOOOO   OOOOOO      \n");
         printf("         OOOOOO         OOOOOO         \n");
         printf("             OOOOOOOOOOOO              \n");
-        printf("\nParabéns! Você acertou!\n");
-        printf("Você fez %.2f pontos. Até a próxima!\n\n", pontos);
+        printf("\nParabÃ©ns! VocÃª acertou!\n");
+        printf("VocÃª fez %.2f pontos. AtÃ© a prÃ³xima!\n\n", pontos);
     } else {
 
         printf("       \\|/ ____ \\|/    \n");
@@ -106,7 +106,7 @@ int main() {
         printf("       /_( \\__/ )_\\    \n");
         printf("          \\__U_/        \n");
 
-        printf("\nVocê perdeu! Tente novamente!\n\n");
+        printf("\nVocÃª perdeu! Tente novamente!\n\n");
     }
 
 
